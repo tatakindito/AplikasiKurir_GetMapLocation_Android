@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/sandwich"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:text="Aplikasi Loper"
+        android:layout_below="@+id/img"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="16dp"/>
+
+
+            <TextView
+            android:id="@+id/judul1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/judul"
+            android:text="Roti Enak "
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="16dp"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="#F44336"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/judul1"
+        android:layout_marginTop="25dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#bdc3c7"
+                android:hint="Username" />
+
+
+            <EditText
+                android:id="@+id/pswrd"
+                style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#bdc3c7"
+                android:hint="Pasword" />
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/nama_edit"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="#C90B35"
+                android:text="LOGIN"
+                android:textStyle="bold"
+                android:theme="@style/buttonstyle2" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
